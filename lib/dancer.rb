@@ -2,6 +2,10 @@
 # require_relative './dance_module.rb'
 
 class Dancer
-  extend FancyDance::ClassMethods
-  include FancyDance::InstanceMethods
+  include Dance       #=> "include" - These are instance methods
+  extend MetaDancing  #=> "extend"  - These are class methods
+  attr_accessor :name
+  def initialize(name)
+    @name = name
+  end
 end
