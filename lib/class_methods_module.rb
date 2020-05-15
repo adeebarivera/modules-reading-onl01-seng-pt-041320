@@ -1,6 +1,6 @@
-module MetaDancing
- 
-  def metadata
-    "This class produces objects that love to dance."
-  end
+  module ClassMethods                 # you "extend" these class methods
+    def megajump 
+      "I'm a whole class of MOFO's jumping"
+    end
+  end 
 end
