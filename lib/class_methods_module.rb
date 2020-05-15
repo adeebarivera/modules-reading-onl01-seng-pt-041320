@@ -1,6 +1,7 @@
-  module ClassMethods                 # you "extend" these class methods
-    def megajump 
-      "I'm a whole class of MOFO's jumping"
+ module ClassMethods
+ 
+    def metadata
+      "This class produces objects that love to dance."
     end
-  end 
+  end
 end
